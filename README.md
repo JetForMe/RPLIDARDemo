@@ -2,9 +2,9 @@
 
 Super bare bones, but might help someone. Seems to work with the [A2M6](https://www.slamtec.com/en/Lidar/A2) I got from [Seeed Studio](https://www.seeedstudio.com/RPLidar-A2M6-The-Thinest-LIDAR-p-2919.html).
 
-<p style="text-align: center;"><a href="https://www.slamtec.com/en/Lidar/A2"><img src="https://i.imgur.com/ZnYn6dP.jpg" alt="RPLIDAR A2" width="417" height="312"></a></p>
+![RPLIDAR A2](https://i.imgur.com/ZnYn6dP.jpg)
 
-<p style="text-align: center;"><img src="https://i.imgur.com/cIGzTG9.png" alt="Demo App Screenshot" width="800" height="637"></p>
+![Demo App Screenshot](https://i.imgur.com/cIGzTG9.png)
 
 
 ## Issues
