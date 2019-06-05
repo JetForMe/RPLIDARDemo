@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6D827B322A73B9300E4D93A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827B222A73B9300E4D93A /* AppDelegate.swift */; };
+		C6D827B522A73B9300E4D93A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827B422A73B9300E4D93A /* ViewController.swift */; };
+		C6D827B722A73B9500E4D93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D827B622A73B9500E4D93A /* Assets.xcassets */; };
+		C6D827BA22A73B9500E4D93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D827B822A73B9500E4D93A /* Main.storyboard */; };
+		C6D827C622A73B9500E4D93A /* RPLidarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827C522A73B9500E4D93A /* RPLidarTests.swift */; };
+		C6D827D122A73B9500E4D93A /* RPLidarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827D022A73B9500E4D93A /* RPLidarUITests.swift */; };
+		C6D827DF22A73BBB00E4D93A /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C6D827DE22A73BBB00E4D93A /* Cartfile */; };
+		C6D827E422A73C5600E4D93A /* librplidar_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D827E322A73C5200E4D93A /* librplidar_sdk.a */; };
+		C6D827E922A73D1D00E4D93A /* SlamtecRPLidar.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6D827E822A73D1D00E4D93A /* SlamtecRPLidar.mm */; };
+		C6D827F122A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827F022A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6D827C222A73B9500E4D93A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6D827A722A73B9300E4D93A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6D827AE22A73B9300E4D93A;
+			remoteInfo = RPLidar;
+		};
+		C6D827CD22A73B9500E4D93A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6D827A722A73B9300E4D93A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6D827AE22A73B9300E4D93A;
+			remoteInfo = RPLidar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6D827AF22A73B9300E4D93A /* RPLidar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPLidar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D827B222A73B9300E4D93A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6D827B422A73B9300E4D93A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6D827B622A73B9500E4D93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6D827B922A73B9500E4D93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6D827BB22A73B9500E4D93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D827BC22A73B9500E4D93A /* RPLidar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RPLidar.entitlements; sourceTree = "<group>"; };
+		C6D827C122A73B9500E4D93A /* RPLidarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPLidarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D827C522A73B9500E4D93A /* RPLidarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPLidarTests.swift; sourceTree = "<group>"; };
+		C6D827C722A73B9500E4D93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D827CC22A73B9500E4D93A /* RPLidarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPLidarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D827D022A73B9500E4D93A /* RPLidarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPLidarUITests.swift; sourceTree = "<group>"; };
+		C6D827D222A73B9500E4D93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D827DE22A73BBB00E4D93A /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		C6D827E322A73C5200E4D93A /* librplidar_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librplidar_sdk.a; path = lib/rplidar/librplidar_sdk.a; sourceTree = "<group>"; };
+		C6D827E622A73D1D00E4D93A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		C6D827E722A73D1D00E4D93A /* SlamtecRPLidar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlamtecRPLidar.h; sourceTree = "<group>"; };
+		C6D827E822A73D1D00E4D93A /* SlamtecRPLidar.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SlamtecRPLidar.mm; sourceTree = "<group>"; };
+		C6D827EB22A73D7300E4D93A /* rplidar_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar_protocol.h; sourceTree = "<group>"; };
+		C6D827EC22A73D7300E4D93A /* rptypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rptypes.h; sourceTree = "<group>"; };
+		C6D827ED22A73D7300E4D93A /* rplidar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar.h; sourceTree = "<group>"; };
+		C6D827EE22A73D7300E4D93A /* rplidar_cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar_cmd.h; sourceTree = "<group>"; };
+		C6D827EF22A73D7300E4D93A /* rplidar_driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar_driver.h; sourceTree = "<group>"; };
+		C6D827F022A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamtecSimpleRPLidarDataView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6D827AC22A73B9300E4D93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D827E422A73C5600E4D93A /* librplidar_sdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D827BE22A73B9500E4D93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D827C922A73B9500E4D93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6D827A622A73B9300E4D93A = {
+			isa = PBXGroup;
+			children = (
+				C6D827DE22A73BBB00E4D93A /* Cartfile */,
+				C6D827B122A73B9300E4D93A /* RPLidar */,
+				C6D827C422A73B9500E4D93A /* RPLidarTests */,
+				C6D827CF22A73B9500E4D93A /* RPLidarUITests */,
+				C6D827B022A73B9300E4D93A /* Products */,
+				C6D827E022A73C4300E4D93A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6D827B022A73B9300E4D93A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6D827AF22A73B9300E4D93A /* RPLidar.app */,
+				C6D827C122A73B9500E4D93A /* RPLidarTests.xctest */,
+				C6D827CC22A73B9500E4D93A /* RPLidarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6D827B122A73B9300E4D93A /* RPLidar */ = {
+			isa = PBXGroup;
+			children = (
+				C6D827E622A73D1D00E4D93A /* Bridging-Header.h */,
+				C6D827B222A73B9300E4D93A /* AppDelegate.swift */,
+				C6D827B422A73B9300E4D93A /* ViewController.swift */,
+				C6D827B622A73B9500E4D93A /* Assets.xcassets */,
+				C6D827B822A73B9500E4D93A /* Main.storyboard */,
+				C6D827BB22A73B9500E4D93A /* Info.plist */,
+				C6D827BC22A73B9500E4D93A /* RPLidar.entitlements */,
+				C6D827E522A73CFD00E4D93A /* RPLIDARSDK */,
+			);
+			path = RPLidar;
+			sourceTree = "<group>";
+		};
+		C6D827C422A73B9500E4D93A /* RPLidarTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6D827C522A73B9500E4D93A /* RPLidarTests.swift */,
+				C6D827C722A73B9500E4D93A /* Info.plist */,
+			);
+			path = RPLidarTests;
+			sourceTree = "<group>";
+		};
+		C6D827CF22A73B9500E4D93A /* RPLidarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6D827D022A73B9500E4D93A /* RPLidarUITests.swift */,
+				C6D827D222A73B9500E4D93A /* Info.plist */,
+			);
+			path = RPLidarUITests;
+			sourceTree = "<group>";
+		};
+		C6D827E022A73C4300E4D93A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6D827EA22A73D7300E4D93A /* include */,
+				C6D827E322A73C5200E4D93A /* librplidar_sdk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6D827E522A73CFD00E4D93A /* RPLIDARSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C6D827E722A73D1D00E4D93A /* SlamtecRPLidar.h */,
+				C6D827E822A73D1D00E4D93A /* SlamtecRPLidar.mm */,
+				C6D827F022A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift */,
+			);
+			path = RPLIDARSDK;
+			sourceTree = "<group>";
+		};
+		C6D827EA22A73D7300E4D93A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C6D827EB22A73D7300E4D93A /* rplidar_protocol.h */,
+				C6D827EC22A73D7300E4D93A /* rptypes.h */,
+				C6D827ED22A73D7300E4D93A /* rplidar.h */,
+				C6D827EE22A73D7300E4D93A /* rplidar_cmd.h */,
+				C6D827EF22A73D7300E4D93A /* rplidar_driver.h */,
+			);
+			name = include;
+			path = lib/rplidar/include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6D827AE22A73B9300E4D93A /* RPLidar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6D827D522A73B9500E4D93A /* Build configuration list for PBXNativeTarget "RPLidar" */;
+			buildPhases = (
+				C6D827AB22A73B9300E4D93A /* Sources */,
+				C6D827AC22A73B9300E4D93A /* Frameworks */,
+				C6D827AD22A73B9300E4D93A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPLidar;
+			productName = RPLidar;
+			productReference = C6D827AF22A73B9300E4D93A /* RPLidar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6D827C022A73B9500E4D93A /* RPLidarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6D827D822A73B9500E4D93A /* Build configuration list for PBXNativeTarget "RPLidarTests" */;
+			buildPhases = (
+				C6D827BD22A73B9500E4D93A /* Sources */,
+				C6D827BE22A73B9500E4D93A /* Frameworks */,
+				C6D827BF22A73B9500E4D93A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6D827C322A73B9500E4D93A /* PBXTargetDependency */,
+			);
+			name = RPLidarTests;
+			productName = RPLidarTests;
+			productReference = C6D827C122A73B9500E4D93A /* RPLidarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6D827CB22A73B9500E4D93A /* RPLidarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6D827DB22A73B9500E4D93A /* Build configuration list for PBXNativeTarget "RPLidarUITests" */;
+			buildPhases = (
+				C6D827C822A73B9500E4D93A /* Sources */,
+				C6D827C922A73B9500E4D93A /* Frameworks */,
+				C6D827CA22A73B9500E4D93A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6D827CE22A73B9500E4D93A /* PBXTargetDependency */,
+			);
+			name = RPLidarUITests;
+			productName = RPLidarUITests;
+			productReference = C6D827CC22A73B9500E4D93A /* RPLidarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6D827A722A73B9300E4D93A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Latency: Zero, LLC";
+				TargetAttributes = {
+					C6D827AE22A73B9300E4D93A = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					C6D827C022A73B9500E4D93A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C6D827AE22A73B9300E4D93A;
+					};
+					C6D827CB22A73B9500E4D93A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C6D827AE22A73B9300E4D93A;
+					};
+				};
+			};
+			buildConfigurationList = C6D827AA22A73B9300E4D93A /* Build configuration list for PBXProject "RPLidar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6D827A622A73B9300E4D93A;
+			productRefGroup = C6D827B022A73B9300E4D93A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6D827AE22A73B9300E4D93A /* RPLidar */,
+				C6D827C022A73B9500E4D93A /* RPLidarTests */,
+				C6D827CB22A73B9500E4D93A /* RPLidarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6D827AD22A73B9300E4D93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D827DF22A73BBB00E4D93A /* Cartfile in Resources */,
+				C6D827B722A73B9500E4D93A /* Assets.xcassets in Resources */,
+				C6D827BA22A73B9500E4D93A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D827BF22A73B9500E4D93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D827CA22A73B9500E4D93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6D827AB22A73B9300E4D93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D827E922A73D1D00E4D93A /* SlamtecRPLidar.mm in Sources */,
+				C6D827B522A73B9300E4D93A /* ViewController.swift in Sources */,
+				C6D827B322A73B9300E4D93A /* AppDelegate.swift in Sources */,
+				C6D827F122A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D827BD22A73B9500E4D93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D827C622A73B9500E4D93A /* RPLidarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D827C822A73B9500E4D93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D827D122A73B9500E4D93A /* RPLidarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6D827C322A73B9500E4D93A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6D827AE22A73B9300E4D93A /* RPLidar */;
+			targetProxy = C6D827C222A73B9500E4D93A /* PBXContainerItemProxy */;
+		};
+		C6D827CE22A73B9500E4D93A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6D827AE22A73B9300E4D93A /* RPLidar */;
+			targetProxy = C6D827CD22A73B9500E4D93A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6D827B822A73B9500E4D93A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6D827B922A73B9500E4D93A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6D827D322A73B9500E4D93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/rplidar/include";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6D827D422A73B9500E4D93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/rplidar/include";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C6D827D622A73B9500E4D93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RPLidar/RPLidar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = RPLidar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib/rplidar/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RPLidar/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C6D827D722A73B9500E4D93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RPLidar/RPLidar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = RPLidar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib/rplidar/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RPLidar/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C6D827D922A73B9500E4D93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = RPLidarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPLidar.app/Contents/MacOS/RPLidar";
+			};
+			name = Debug;
+		};
+		C6D827DA22A73B9500E4D93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = RPLidarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPLidar.app/Contents/MacOS/RPLidar";
+			};
+			name = Release;
+		};
+		C6D827DC22A73B9500E4D93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = RPLidarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RPLidar;
+			};
+			name = Debug;
+		};
+		C6D827DD22A73B9500E4D93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = RPLidarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RPLidar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6D827AA22A73B9300E4D93A /* Build configuration list for PBXProject "RPLidar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D827D322A73B9500E4D93A /* Debug */,
+				C6D827D422A73B9500E4D93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6D827D522A73B9500E4D93A /* Build configuration list for PBXNativeTarget "RPLidar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D827D622A73B9500E4D93A /* Debug */,
+				C6D827D722A73B9500E4D93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6D827D822A73B9500E4D93A /* Build configuration list for PBXNativeTarget "RPLidarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D827D922A73B9500E4D93A /* Debug */,
+				C6D827DA22A73B9500E4D93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6D827DB22A73B9500E4D93A /* Build configuration list for PBXNativeTarget "RPLidarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D827DC22A73B9500E4D93A /* Debug */,
+				C6D827DD22A73B9500E4D93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6D827A722A73B9300E4D93A /* Project object */;
+}
