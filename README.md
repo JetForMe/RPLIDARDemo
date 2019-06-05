@@ -5,3 +5,9 @@ Super bare bones, but might help someone. Seems to work with the [A2M6](https://
 Serial port is hard-coded to `/dev/tty.SLAB_USBtoUART`. See `-[SlamtecRPLidar connect:]` to change it if you need to.
 
 Resize the window once to get the scaling right.
+
+## Build Instructions
+
+1. Download the code
+2. cd to the project directory
+3. run `$ carthage update`
