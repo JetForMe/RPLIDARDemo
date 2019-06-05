@@ -10,11 +10,11 @@ Serial port is hard-coded to `/dev/tty.SLAB_USBtoUART`. See `-[SlamtecRPLidar co
 
 ## Issues
 
-* Resize the window once to get the scaling right.
-* Even so, there’s something wrong about the ranging. The rings are supposed to be on one-meter intervals.
+*  Resize the window once to get the scaling right.
+*  Even so, there’s something wrong about the ranging. The rings are supposed to be on one-meter intervals.
 
 ## Build Instructions
-
+	
 1. Download the code
 2. Open the Xcode project
 3. Build and Run
