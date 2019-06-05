@@ -9,5 +9,5 @@ Resize the window once to get the scaling right.
 ## Build Instructions
 
 1. Download the code
-2. cd to the project directory
-3. run `$ carthage update`
+2. Open the Xcode project
+3. Build and Run
