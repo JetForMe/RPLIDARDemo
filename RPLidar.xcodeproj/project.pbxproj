@@ -3,18 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C69087DE2AD377470062EE32 /* libsl_lidar_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C69087DD2AD36D450062EE32 /* libsl_lidar_sdk.a */; };
 		C6D827B322A73B9300E4D93A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827B222A73B9300E4D93A /* AppDelegate.swift */; };
 		C6D827B522A73B9300E4D93A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827B422A73B9300E4D93A /* ViewController.swift */; };
 		C6D827B722A73B9500E4D93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D827B622A73B9500E4D93A /* Assets.xcassets */; };
 		C6D827BA22A73B9500E4D93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D827B822A73B9500E4D93A /* Main.storyboard */; };
 		C6D827C622A73B9500E4D93A /* RPLidarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827C522A73B9500E4D93A /* RPLidarTests.swift */; };
 		C6D827D122A73B9500E4D93A /* RPLidarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827D022A73B9500E4D93A /* RPLidarUITests.swift */; };
-		C6D827DF22A73BBB00E4D93A /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C6D827DE22A73BBB00E4D93A /* Cartfile */; };
-		C6D827E422A73C5600E4D93A /* librplidar_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D827E322A73C5200E4D93A /* librplidar_sdk.a */; };
 		C6D827E922A73D1D00E4D93A /* SlamtecRPLidar.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6D827E822A73D1D00E4D93A /* SlamtecRPLidar.mm */; };
 		C6D827F122A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D827F022A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C69087DD2AD36D450062EE32 /* libsl_lidar_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsl_lidar_sdk.a; path = lib/rplidar/libsl_lidar_sdk.a; sourceTree = "<group>"; };
 		C6D827AF22A73B9300E4D93A /* RPLidar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPLidar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D827B222A73B9300E4D93A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6D827B422A73B9300E4D93A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,16 +50,9 @@
 		C6D827CC22A73B9500E4D93A /* RPLidarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPLidarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D827D022A73B9500E4D93A /* RPLidarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPLidarUITests.swift; sourceTree = "<group>"; };
 		C6D827D222A73B9500E4D93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6D827DE22A73BBB00E4D93A /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		C6D827E322A73C5200E4D93A /* librplidar_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librplidar_sdk.a; path = lib/rplidar/librplidar_sdk.a; sourceTree = "<group>"; };
 		C6D827E622A73D1D00E4D93A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		C6D827E722A73D1D00E4D93A /* SlamtecRPLidar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlamtecRPLidar.h; sourceTree = "<group>"; };
 		C6D827E822A73D1D00E4D93A /* SlamtecRPLidar.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SlamtecRPLidar.mm; sourceTree = "<group>"; };
-		C6D827EB22A73D7300E4D93A /* rplidar_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar_protocol.h; sourceTree = "<group>"; };
-		C6D827EC22A73D7300E4D93A /* rptypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rptypes.h; sourceTree = "<group>"; };
-		C6D827ED22A73D7300E4D93A /* rplidar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar.h; sourceTree = "<group>"; };
-		C6D827EE22A73D7300E4D93A /* rplidar_cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar_cmd.h; sourceTree = "<group>"; };
-		C6D827EF22A73D7300E4D93A /* rplidar_driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rplidar_driver.h; sourceTree = "<group>"; };
 		C6D827F022A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlamtecSimpleRPLidarDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D827E422A73C5600E4D93A /* librplidar_sdk.a in Frameworks */,
+				C69087DE2AD377470062EE32 /* libsl_lidar_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +85,6 @@
 		C6D827A622A73B9300E4D93A = {
 			isa = PBXGroup;
 			children = (
-				C6D827DE22A73BBB00E4D93A /* Cartfile */,
 				C6D827B122A73B9300E4D93A /* RPLidar */,
 				C6D827C422A73B9500E4D93A /* RPLidarTests */,
 				C6D827CF22A73B9500E4D93A /* RPLidarUITests */,
@@ -147,8 +139,7 @@
 		C6D827E022A73C4300E4D93A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C6D827EA22A73D7300E4D93A /* include */,
-				C6D827E322A73C5200E4D93A /* librplidar_sdk.a */,
+				C69087DD2AD36D450062EE32 /* libsl_lidar_sdk.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,19 +152,6 @@
 				C6D827F022A753AC00E4D93A /* SlamtecSimpleRPLidarDataView.swift */,
 			);
 			path = RPLIDARSDK;
-			sourceTree = "<group>";
-		};
-		C6D827EA22A73D7300E4D93A /* include */ = {
-			isa = PBXGroup;
-			children = (
-				C6D827EB22A73D7300E4D93A /* rplidar_protocol.h */,
-				C6D827EC22A73D7300E4D93A /* rptypes.h */,
-				C6D827ED22A73D7300E4D93A /* rplidar.h */,
-				C6D827EE22A73D7300E4D93A /* rplidar_cmd.h */,
-				C6D827EF22A73D7300E4D93A /* rplidar_driver.h */,
-			);
-			name = include;
-			path = lib/rplidar/include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +216,9 @@
 		C6D827A722A73B9300E4D93A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Latency: Zero, LLC";
 				TargetAttributes = {
 					C6D827AE22A73B9300E4D93A = {
@@ -257,7 +236,7 @@
 				};
 			};
 			buildConfigurationList = C6D827AA22A73B9300E4D93A /* Build configuration list for PBXProject "RPLidar" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -281,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D827DF22A73BBB00E4D93A /* Cartfile in Resources */,
 				C6D827B722A73B9500E4D93A /* Assets.xcassets in Resources */,
 				C6D827BA22A73B9500E4D93A /* Main.storyboard in Resources */,
 			);
@@ -384,6 +362,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -392,9 +371,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -410,11 +391,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/rplidar/include";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx14.0;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -446,6 +427,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -454,9 +436,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -466,10 +450,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/rplidar/include";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx14.0;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -483,6 +467,7 @@
 				CODE_SIGN_ENTITLEMENTS = RPLidar/RPLidar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = H6F2W964VK;
 				INFOPLIST_FILE = RPLidar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,8 +478,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib/rplidar/",
+					"$(PROJECT_DIR)/lib/rplidar",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RPLidar/Bridging-Header.h";
@@ -511,6 +496,7 @@
 				CODE_SIGN_ENTITLEMENTS = RPLidar/RPLidar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = H6F2W964VK;
 				INFOPLIST_FILE = RPLidar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -521,8 +507,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib/rplidar/",
+					"$(PROJECT_DIR)/lib/rplidar",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.RPLidar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RPLidar/Bridging-Header.h";
@@ -537,6 +523,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = H6F2W964VK;
 				INFOPLIST_FILE = RPLidarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -558,6 +545,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = H6F2W964VK;
 				INFOPLIST_FILE = RPLidarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,6 +566,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = H6F2W964VK;
 				INFOPLIST_FILE = RPLidarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -598,6 +587,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = H6F2W964VK;
 				INFOPLIST_FILE = RPLidarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

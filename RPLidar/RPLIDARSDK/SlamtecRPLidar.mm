@@ -20,7 +20,7 @@ using namespace rp::standalone::rplidar;
 
 @interface SlamtecRPLidar()
 
-@property (nonatomic, assign)	RPlidarDriver*			driver;
+@property (nonatomic, assign)	ILidarDriver*			driver;
 @property (nonatomic, assign)	RplidarScanMode			mode;
 
 @end
@@ -47,7 +47,7 @@ init
 	self = [super init];
 	if (self != nil)
 	{
-		self.driver = RPlidarDriver::CreateDriver();
+		self.driver = *createLidarDriver();
 	}
 	
 	return self;
@@ -56,14 +56,15 @@ init
 - (void)
 dealloc
 {
-	RPlidarDriver::DisposeDriver(self.driver);
+	delete self.driver;
 }
 
 - (BOOL)
 connect: (NSError**) outError
 {
-	u_result result = self.driver->connect("/dev/tty.SLAB_USBtoUART", 115200);	//	TODO: Find this!
-	if (IS_FAIL(result))
+	Result<IChannel*> channel = createSerialPortChannel("/dev/tty.usbserial-210", 1000000);	//	TODO: Find this!
+	auto result = self.driver->connect(*channel);
+	if (SL_IS_FAIL(result))
 	{
 		if (outError != nil)
 		{
@@ -74,7 +75,7 @@ connect: (NSError**) outError
 	
 	std::vector<RplidarScanMode> modes;
 	result = self.driver->getAllSupportedScanModes(modes);
-	if (IS_FAIL(result))
+	if (SL_IS_FAIL(result))
 	{
 		if (outError != nil)
 		{
@@ -94,13 +95,13 @@ connect: (NSError**) outError
 - (void)
 startMotor
 {
-	self.driver->startMotor();
+	self.driver->setMotorSpeed();
 }
 
 - (void)
 stopMotor
 {
-	self.driver->stopMotor();
+	self.driver->setMotorSpeed(0);
 }
 
 - (BOOL)
@@ -111,6 +112,14 @@ startScan: (NSError**) outError
 	self.mode = scanMode;
 	return IS_OK(result);
 }
+
+- (void)
+stop
+{
+	self.driver->stop();
+}
+
+
 
 - (NSInteger)
 grabScanData: (RPLidarMeasurementHQ*) ioData error: (NSError**) outError
@@ -132,21 +141,21 @@ grabScanData: (RPLidarMeasurementHQ*) ioData error: (NSError**) outError
 	return (NSInteger) nodeCount;
 }
 
-- (float)
-getFrequency: (NSInteger) inCount error: (NSError**) outError __attribute__((swift_error(nonnull_error)))
-{
-	float freq;
-	u_result result = self.driver->getFrequency(self.mode, (size_t) inCount, freq);
-	if (IS_FAIL(result))
-	{
-		if (outError != nil)
-		{
-			*outError = [NSError errorWithDomain: @"RPLIDARError" code: result & 0x7FFF userInfo: nil];
-		}
-		return 0.0;
-	}
-	
-	return freq;
-}
+//- (float)
+//getFrequency: (NSInteger) inCount error: (NSError**) outError __attribute__((swift_error(nonnull_error)))
+//{
+//	float freq;
+//	u_result result = self.driver->getFrequency(self.mode, (size_t) inCount, freq);
+//	if (IS_FAIL(result))
+//	{
+//		if (outError != nil)
+//		{
+//			*outError = [NSError errorWithDomain: @"RPLIDARError" code: result & 0x7FFF userInfo: nil];
+//		}
+//		return 0.0;
+//	}
+//	
+//	return freq;
+//}
 
 @end

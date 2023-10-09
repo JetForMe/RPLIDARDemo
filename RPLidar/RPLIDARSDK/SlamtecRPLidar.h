@@ -37,7 +37,8 @@ SlamtecRPLidar : NSObject
 - (void)				stopMotor;
 - (BOOL)				startScan: (NSError**) outError;
 - (NSInteger)			grabScanData: (RPLidarMeasurementHQ*) ioData error: (NSError**) outError __attribute__((swift_error(nonnull_error)));
-- (float)				getFrequency: (NSInteger) inCount error: (NSError**) outError __attribute__((swift_error(nonnull_error))) NS_SWIFT_NAME(getFrequency(count:));
+//- (float)				getFrequency: (NSInteger) inCount error: (NSError**) outError __attribute__((swift_error(nonnull_error))) NS_SWIFT_NAME(getFrequency(count:));
+- (void)				stop;
 
 @end
 

@@ -35,10 +35,11 @@
 #pragma once
 
 #include <vector>
-#include "rphaltypes.h"
+#include "hal_types.h"
 #include "rplidar_protocol.h"
 #include "rplidar_cmd.h"
 
 #include "rplidar_driver.h"
 
-#define RPLIDAR_SDK_VERSION  "1.10.0"
+#define RPLIDAR_SDK_VERSION "2.0.0"
+#define SLAMTEC_LIDAR_SDK_VERSION  SL_LIDAR_SDK_VERSION

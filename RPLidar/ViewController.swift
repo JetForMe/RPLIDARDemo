@@ -76,6 +76,7 @@ ViewController: NSViewController
 	func
 	stopUpdating()
 	{
+		self.lidar.stop()
 		self.lidar.stopMotor()
 		self.scanTimer?.invalidate()
 		self.measurements = nil
@@ -92,8 +93,8 @@ ViewController: NSViewController
 		
 		if let count = count
 		{
-			let freq = try! self.lidar.getFrequency(count: count)
-			print("Freq: \(freq), count: \(count)")
+//			let freq = try! self.lidar.getFrequency(count: count)
+//			print("Freq: \(freq), count: \(count)")
 		}
 		return Int(count ?? 0)
 	}
